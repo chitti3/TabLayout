@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="gone"
+    android:id="@+id/jobs_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/job_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/back_constrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_arrow"
+            android:tint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="12sp"
+            android:textColor="@color/text_color"
+            android:layout_marginStart="4dp"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@+id/back"
+            app:layout_constraintTop_toTopOf="@+id/back"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/job_view1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/job_image"
+        app:layout_constraintEnd_toEndOf="@+id/job_image"
+        app:layout_constraintStart_toStartOf="@+id/job_image" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/job_details_cardview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/job_view1">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/jobs_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/pin_unpin_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/pin_unpin_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/jobs_title"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/jobs_title"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/post_region_constrain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="@+id/jobs_title"
+                app:layout_constraintTop_toBottomOf="@+id/jobs_title"
+                app:layout_constraintEnd_toEndOf="@+id/pin_unpin_img">
+
+                <TextView
+                    android:id="@+id/post_by"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="6dp"
+                    app:layout_constraintEnd_toStartOf="@+id/job_region"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/job_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginStart="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/post_by"
+                    app:layout_constraintTop_toTopOf="@+id/post_by" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/type_date_constrain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="@+id/jobs_title"
+                app:layout_constraintTop_toBottomOf="@+id/post_region_constrain"
+                app:layout_constraintEnd_toEndOf="@+id/pin_unpin_img">
+
+                <TextView
+                    android:id="@+id/jobs_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="6dp"
+                    app:layout_constraintEnd_toStartOf="@+id/jobs_date"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/jobs_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginStart="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/jobs_type"
+                    app:layout_constraintTop_toTopOf="@+id/jobs_type" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:id="@+id/job_view2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/light_dark"
+                app:layout_constraintLeft_toLeftOf="@+id/jobs_title"
+                app:layout_constraintRight_toRightOf="@+id/pin_unpin_img"
+                app:layout_constraintTop_toBottomOf="@+id/type_date_constrain" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintLeft_toLeftOf="@+id/jobs_title"
+                app:layout_constraintRight_toLeftOf="@+id/applied_btn"
+                app:layout_constraintTop_toBottomOf="@+id/job_view2" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintLeft_toLeftOf="@+id/jobs_title"
+                app:layout_constraintRight_toLeftOf="@+id/applied_btn"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <Button
+                android:id="@+id/save_job_btn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg7"
+                android:gravity="center"
+                android:text="Save Job"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="@+id/jobs_title"
+                app:layout_constraintTop_toTopOf="@+id/applied_btn"
+                app:layout_constraintBottom_toBottomOf="@+id/applied_btn"
+                />
+
+            <Button
+                android:id="@+id/applied_btn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg2"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt2"
+                app:layout_constraintRight_toRightOf="@+id/pin_unpin_img"
+                app:layout_constraintTop_toTopOf="@+id/txt1" />
+
+            <View
+                android:id="@+id/job_view3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/light_dark"
+                app:layout_constraintLeft_toLeftOf="@+id/jobs_title"
+                app:layout_constraintRight_toRightOf="@+id/pin_unpin_img"
+                app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nested_scroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/job_view3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/job_desc_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Job Description"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:id="@+id/jobs_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:id="@+id/job_key_res_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Key Responsibility"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:id="@+id/job_key_res_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:id="@+id/job_loc_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Job Location"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp" />
+
+                    <TextView
+                        android:id="@+id/job_loc_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp" />
+
+                 <!--   <ImageView
+                        android:id="@+id/map_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/map">-->
+
+                    <!--</ImageView>-->
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.MapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

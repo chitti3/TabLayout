@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/toolbar_search_view"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:background="@drawable/bg4"
+        android:hint="Search"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/user_img1"
+        app:layout_constraintEnd_toStartOf="@+id/points"
+        app:layout_constraintStart_toEndOf="@+id/menu"
+        app:layout_constraintTop_toTopOf="@+id/user_img1" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/user_img1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_img1" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3,789"
+        android:textColor="@color/black"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/level_txt"
+        app:layout_constraintEnd_toStartOf="@+id/points_txt"
+        app:layout_constraintTop_toTopOf="@+id/user_img1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/points_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        android:text="pts"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/points"
+        app:layout_constraintRight_toLeftOf="@+id/user_img1"
+        app:layout_constraintTop_toTopOf="@+id/points"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/level_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="GOLD"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_img1"
+        app:layout_constraintEnd_toStartOf="@+id/user_img1"
+        app:layout_constraintTop_toBottomOf="@+id/points" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/user_img1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/connection_user_code"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/textview_circle2"
+            android:gravity="center"
+            android:text="MS"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/profile_img1"
+            android:visibility="visible"
+
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

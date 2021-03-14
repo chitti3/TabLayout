@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_marginTop="20dp"
+
+
+        />
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+android:text="View Milestone"
+        android:textSize="18sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/add_mile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add"
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/no_list_img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+        android:id="@+id/no_list_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+
+        android:textSize="12sp"
+        android:visibility="gone"
+        /><android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

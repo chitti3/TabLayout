@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="pictures" path="Android/data/com.example.youthhub/files/Pictures" />
+    <external-path name="movies" path="Android/data/com.example.youthhub/files/Movies" />
+</paths>-->
+
+<!--<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="external_files"
+        path="." />
+    <root-path
+        name="external_files"
+        path="/storage/"/>
+</paths>-->
+
+<paths>
+    <cache-path
+        name="cache"
+        path="." />
+    <external-path
+        name="external_files"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+</paths>

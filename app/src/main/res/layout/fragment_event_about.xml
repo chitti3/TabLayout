@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/event_hosted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/event_end_date"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/event_end_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/text_color"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="end"
+                app:layout_constraintBottom_toBottomOf="@+id/event_hosted"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/event_hosted"
+                app:layout_constraintTop_toTopOf="@+id/event_hosted" />
+
+            <TextView
+                android:id="@+id/event_desc_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Event Details"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/event_end_date"
+                app:layout_constraintStart_toStartOf="@+id/event_hosted"
+                app:layout_constraintTop_toBottomOf="@+id/event_hosted" />
+
+            <TextView
+                android:id="@+id/event_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/event_end_date"
+                app:layout_constraintStart_toStartOf="@+id/event_hosted"
+                app:layout_constraintTop_toBottomOf="@+id/event_desc_title" />
+
+            <TextView
+                android:id="@+id/event_location_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Event Location"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/event_end_date"
+                app:layout_constraintStart_toStartOf="@+id/event_hosted"
+                app:layout_constraintTop_toBottomOf="@+id/event_desc" />
+
+            <TextView
+                android:id="@+id/event_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/event_end_date"
+                app:layout_constraintStart_toStartOf="@+id/event_hosted"
+                app:layout_constraintTop_toBottomOf="@+id/event_location_title" />
+
+            <ImageView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/map"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_location">
+
+            </ImageView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

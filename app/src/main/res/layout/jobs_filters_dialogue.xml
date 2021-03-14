@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filters_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Filters"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dialog_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_close_black_24dp"
+                android:tint="@color/black" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg6"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="5dp"
+            android:hint="Search"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/category_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub_category_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Sub Category"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/category"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/spinner_drop_down"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/sub_category"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sub_category"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/spinner_drop_down"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toRightOf="@+id/category"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+                <View
+                    android:id="@+id/sub_category_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/transparent"
+                    app:layout_constraintLeft_toLeftOf="@+id/sub_category"
+                    app:layout_constraintTop_toTopOf="@+id/sub_category"
+                    app:layout_constraintBottom_toBottomOf="@+id/sub_category"
+                    app:layout_constraintRight_toRightOf="@+id/sub_category"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/region_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Region/Location"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/city_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="District/City"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/region"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/spinner_drop_down"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/city" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/spinner_drop_down"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toRightOf="@+id/region"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <View
+                    android:id="@+id/city_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/transparent"
+                    app:layout_constraintLeft_toLeftOf="@+id/city"
+                    app:layout_constraintTop_toTopOf="@+id/city"
+                    app:layout_constraintBottom_toBottomOf="@+id/city"
+                    app:layout_constraintRight_toRightOf="@+id/city"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/salary_type_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="Salary Type"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/salary_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spinner_drop_down"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/from_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="From"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/to_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="To"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/salary_from"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/spinner_drop_down"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/salary_to" />
+
+                <View
+                    android:id="@+id/salary_from_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/transparent"
+                    app:layout_constraintLeft_toLeftOf="@+id/salary_from"
+                    app:layout_constraintTop_toTopOf="@+id/salary_from"
+                    app:layout_constraintBottom_toBottomOf="@+id/salary_from"
+                    app:layout_constraintRight_toRightOf="@+id/salary_from"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/salary_to"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/spinner_drop_down"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toRightOf="@+id/salary_from"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <View
+                    android:id="@+id/salary_to_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/transparent"
+                    app:layout_constraintLeft_toLeftOf="@+id/salary_to"
+                    app:layout_constraintTop_toTopOf="@+id/salary_to"
+                    app:layout_constraintBottom_toBottomOf="@+id/salary_to"
+                    app:layout_constraintRight_toRightOf="@+id/salary_to"/>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jobType_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="Job Type"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/jobType_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spinner_drop_down"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/apply_button"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg2"
+                android:gravity="center"
+                android:text="Apply Filter"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg3"
+                android:gravity="center"
+                android:text="Clear Filter"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

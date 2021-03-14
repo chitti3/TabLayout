@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <View
+        android:id="@+id/suggest_con_view1"
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/suggest_con_cardview"
+        app:layout_constraintBottom_toBottomOf="@+id/suggest_con_cardview"/>
+
+    <View
+        android:id="@+id/suggest_con_view2"
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/suggest_con_view1"
+        app:layout_constraintTop_toTopOf="@+id/suggest_con_cardview"
+        app:layout_constraintBottom_toBottomOf="@+id/suggest_con_cardview"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/suggest_con_cardview"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintRight_toLeftOf="@+id/suggest_con_view3"
+        app:layout_constraintLeft_toRightOf="@+id/suggest_con_view2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/connection_constrain"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/connection_img"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/profile_img3"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/connection_user_code"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/textview_circle2"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/connection_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:lines="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connection_constrain" />
+
+            <TextView
+                android:id="@+id/connection_region"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:lines="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connection_name" />
+
+            <Button
+                android:id="@+id/follow"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg2"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/contact"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connection_region" />
+
+            <Button
+                android:id="@+id/contact"
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+                android:text="Contact"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:background="@drawable/bg3"
+                app:layout_constraintBottom_toBottomOf="@+id/follow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/follow"
+                app:layout_constraintTop_toTopOf="@+id/follow" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/suggest_con_view3"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/suggest_con_cardview"
+        app:layout_constraintBottom_toBottomOf="@+id/suggest_con_cardview"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

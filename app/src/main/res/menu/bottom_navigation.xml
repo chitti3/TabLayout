@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/action_cmt"
+        android:icon="@drawable/ic_comment"
+        android:title="Comment"/>
+
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@drawable/ic_camera"
+        android:title="Camera"/>
+
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification"/>
+
+    <item
+        android:id="@+id/action_jobs"
+        android:icon="@drawable/ic_jobs"
+        android:title="Jobs"/>
+
+</menu>

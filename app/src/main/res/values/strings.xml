@@ -1,0 +1,120 @@
+<resources>
+    <item name="object" type="id" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <item name="integer" type="id" />
+    <item name="glide_tag" type="id" />
+    <item name="glide_object_tag" type="id" />
+    <item name="glide_image_tag" type="id" />
+    <item name="delete_msg__tag" type="id" />
+    <item name="delete_msg__position" type="id" />
+    <item name="connection_object" type="id" />
+    <item name="follow__tag_object" type="id" />
+    <item name="follow__tag_position" type="id" />
+    <item name="is_save_tag_object" type="id" />
+    <item name="is_save_tag_position" type="id" />
+
+    //api error messages
+    <item name="holder_tag" type="id" />
+    <item name="data_tag" type="id" />
+    <item name="position" type="id" />
+    <item name="data_tag1" type="id" />
+    <string name="app_name">YouthHub</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover_str">Discover where people are going, and join them on their trips.</string>
+    <string name="invite_str">Ask people to join you on your trips</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at beatae cupiditate deleniti doloremque est eum inventore.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis orci in libero dignissim, at sagittis ante rutrum. Fusce ullamcorper tellus non quam pharetra, et tempor neque congue. Curabitur sed mauris ex. Etiam et venenatis nisl. Maecenas congue leo a mauris eleifend, eget laoreet nisi tincidunt.</string>
+    <string name="lorem_ipsum1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</string>
+    <string name="verify_account">Verify your\naccount</string>
+    <string name="no_responsibility">No Key Responsibility Available"</string>
+    <string name="empty">should not be empty</string>
+    <string name="select_role">Select your Role</string>
+    <string name="error_msg">Something went wrong please try after sometime</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="internet_check_txt">You are offline please check your internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="select_category">All</string>
+    <string name="select_sub_category">All</string>
+    <string name="select_region">All</string>
+    <string name="select_education_region">Select</string>
+    <string name="select_volcat">Select Volunteer Category</string>
+    <string name="select_lang">Select Language</string>
+    <string name="select_profiti">Select Profitiency</string>
+    <string name="select_typemaster">Select CV Type</string>
+    <string name="select_preferegion">Select Preferred Region</string>
+    <string name="select_city">All</string>
+    <string name="select_prefcity">Select Preferred City</string>
+    <string name="select_intended_destination">Select Future Intended Destination</string>
+    <string name="select_license">All</string>
+    <string name="select_residencystatus">All</string>
+    <string name="select_visatype">Select Visa Type</string>
+    <string name="select_salary_type">Select Salary Type</string>
+    <string name="salary_from">All</string>
+    <string name="salary_to">All</string>
+    <string name="select_job_type">All</string>
+    <string name="select_buinesscategory">Select Work Industry</string>
+    <string name="select_tags">Select Tags</string>
+    <string name="select_sub_service">Select Sub Service</string>
+    <string name="select_service_type">Select Service Type</string>
+    <string name="select_wishlist">Select WishList</string>
+    <string name="select_qualification">Select</string>
+
+    //count setTag ids
+    <string name="select_qualificationprovider">Select Qualification Provider</string>
+    <string name="select_titlequalification">Select Title Qualification</string>
+    <string name="select_ncea">Select</string>
+    <string name="about">About</string>
+    <string name="topics">Topics</string>
+    <string name="add_explore">Add My Explore</string>
+    <string name="remove_explore">Remove My Explore</string>
+    <string name="discussion_board">Discussion Board</string>
+    <string name="select_geneder">Select Gender</string>
+    <string name="select_organisation">Select</string>
+    <string name="select_iwi">All</string>
+    <string name="select_ethnicity">Select Ethnicity</string>
+    <string name="select_workstatus">All</string>
+    <string name="select_providertitle">Select Provider Title</string>
+    <string name="select_workavaiability">All</string>
+    <string name="select_workexperience">All</string>
+
+    //support
+    <string name="select_filter_sub_category">All</string>
+    <string name="description">Description</string>
+    <string name="resume_cover_letter">Add Resume / Cover Letter</string>
+    <string name="apply_job">Apply Job</string>
+    <string name="title">Title</string>
+    <string name="type">Type</string>
+    <string name="apply">Apply</string>
+    <string name="file_upload">File Upload</string>
+    <string name="select_type">Select Type</string>
+    <string name="select_resume">Select Resume</string>
+    <string name="reply">Reply</string>
+    <string name="attach_file">Attach File</string>
+    <string name="ticket_id">Ticket ID</string>
+    <string name="date">Date</string>
+    <string name="replies">Replies</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="select_file">Select File</string>
+    <string name="select_tag">Select Tag</string>
+    <string name="select_visual_journey">Select Visual Journey</string>
+    <string name="write_something">Write Something…</string>
+    <string name="tag_your_journey">Tag Your Journey :</string>
+    <string name="follow">Follow</string>
+    <string name="un_follow">UnFollow</string>
+    <string name="no_comment">No Comment found</string>
+    <string name="post_description">Post Description</string>
+    <string name="post_report">Report</string>
+    <string name="share">Share</string>
+    <string name="skip">Skip</string>
+    <string name="write_your_update">Write your update…</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="photo_video_library"><![CDATA[Photo & Video Library]]></string>
+    <string name="photo_library">Photo Library</string>
+
+</resources>

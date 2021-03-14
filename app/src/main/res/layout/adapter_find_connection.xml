@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_view"
+        app:layout_constraintBottom_toBottomOf="@+id/card_view"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/card_view"
+        app:layout_constraintBottom_toBottomOf="@+id/card_view"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/view2"
+        app:layout_constraintRight_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/connector_name_code"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textview_circle2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/connector_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/connector_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:lines="1"
+                android:includeFontPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connector_name_code" />
+
+            <TextView
+                android:id="@+id/connector_place"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:lines="1"
+                android:includeFontPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connector_name" />
+
+            <Button
+                android:id="@+id/follow"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg2"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/contact"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connector_place"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/contact"
+                android:layout_width="65dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg3"
+                android:text="Contact"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/follow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/follow"
+                app:layout_constraintTop_toTopOf="@+id/follow" />
+
+            <Button
+                android:id="@+id/shared"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg3"
+                android:textColor="@color/colorPrimary"
+                android:text="Share"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/follow"
+              />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/card_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_view" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:id="@+id/check_view"
+    android:layout_height="wrap_content">
+
+    <!-- <TextView
+         android:id="@+id/tags_name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="8dp"
+         android:layout_marginEnd="16dp"
+         android:layout_marginBottom="8dp"
+         android:layout_weight="1"
+         android:gravity="left"
+         android:lines="1"
+         android:text="lkbbtrbts3fyhyjjkiikuithtyhthht"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toStartOf="@+id/check_img"
+         app:layout_constraintHorizontal_bias="0.5"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <ImageView
+         android:id="@+id/check_img"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginEnd="16dp"
+         android:src="@drawable/ic_tick"
+         android:visibility="invisible"
+         android:layout_gravity="center|right"
+         android:layout_weight="9"
+         app:layout_constraintBottom_toBottomOf="@+id/tags_name"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.5"
+         app:layout_constraintStart_toEndOf="@+id/tags_name"
+         app:layout_constraintTop_toTopOf="@+id/tags_name" />-->
+
+
+
+    <TextView
+        android:id="@+id/tags_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="text"
+        android:textAlignment="gravity" />
+
+    <ImageView
+        android:id="@+id/check_img"
+        android:src="@drawable/ic_tick"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_weight="9"
+        android:foregroundGravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true" />
+
+    <!--
+        <View
+            android:id="@+id/check_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:layout_constraintLeft_toLeftOf="@+id/tags_name"
+            app:layout_constraintTop_toTopOf="@+id/tags_name"
+            app:layout_constraintRight_toRightOf="@+id/check_img"
+            app:layout_constraintBottom_toBottomOf="@+id/tags_name"/>
+
+    -->
+</RelativeLayout>

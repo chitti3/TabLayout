@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_technicalskil"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/skills_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="PHP"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/skills_rating"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skills_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/skills_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/skills_title"
+        app:layout_constraintTop_toTopOf="@+id/skills_title" />
+
+    <ImageView
+        android:id="@+id/skills_delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/skills_rating"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/skills_delete2"
+        android:layout_width="21dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_delete"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/skills_title"
+        app:layout_constraintTop_toTopOf="@+id/skills_rating"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

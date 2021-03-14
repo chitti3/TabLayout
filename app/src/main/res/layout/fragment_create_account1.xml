@@ -1,0 +1,205 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context="com.example.youthhub.signUpPage.FragmentCreateAccount1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/constrain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.youthhub.utils.CustomEditText
+        android:id="@+id/youth"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Youth"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:clickable="false"
+        android:inputType="textFilter"
+        android:focusedByDefault="false"
+        android:contextClickable="false"
+        android:longClickable="false"
+        android:linksClickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingLeft="2dp"
+        android:textSize="14sp"
+        android:theme="@style/EditText_light_color"
+        app:layout_constraintBottom_toTopOf="@+id/constrain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </com.example.youthhub.utils.CustomEditText>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/next_btn">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/user_role_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_marginRight="8dp"
+            android:textSize="12sp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/light_dark"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+
+        <com.example.youthhub.utils.CustomEditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="22dp"
+            android:nextFocusUp="@id/user_role_spinner"
+            android:hint="Enter your Email"
+            android:inputType="textFilter"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="2dp"
+            android:textSize="14sp"
+            android:theme="@style/EditText_light_color"
+            app:layout_constraintBottom_toTopOf="@+id/dob"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_role_spinner" />
+
+        <com.example.youthhub.utils.CustomEditText
+            android:id="@+id/dob"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="2dp"
+            android:layout_marginRight="22dp"
+            android:drawableRight="@drawable/ic_calendar"
+            android:drawableTint="@color/text_color"
+            android:hint="Select your DOB"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp"
+            android:theme="@style/EditText_light_color"
+            app:layout_constraintBottom_toTopOf="@+id/checkbox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="327dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:text="I accept YouthHub"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/terms_condition_txt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+        <TextView
+            android:id="@+id/terms_condition_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="6dp"
+            android:text="@string/terms_condition"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="@+id/terms_condition_txt"
+            app:layout_constraintLeft_toRightOf="@+id/terms_condition_txt"
+            android:layout_marginStart="4dp"
+            app:layout_constraintTop_toTopOf="@+id/terms_condition_txt"
+            />
+
+        <TextView
+            android:id="@+id/privacy_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="@+id/terms_condition_txt"
+            app:layout_constraintBottom_toBottomOf="@+id/terms_condition_txt"
+            app:layout_constraintLeft_toRightOf="@+id/slash"
+            android:layout_marginStart="4dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/steps_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:text="Step 1 of 3"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/constrain"
+        app:layout_constraintTop_toBottomOf="@+id/constrain"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/open_screen_btn_shape2"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/steps_txt"
+        app:layout_constraintRight_toRightOf="@+id/constrain"
+        app:layout_constraintTop_toTopOf="@+id/steps_txt" />
+
+</android.support.constraint.ConstraintLayout>

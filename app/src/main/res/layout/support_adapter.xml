@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ticket_id_txt"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:text="Ticket ID"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ticket_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ticket_id_txt"
+                app:layout_constraintEnd_toStartOf="@+id/date_txt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ticket_id_txt"
+                app:layout_constraintTop_toTopOf="@+id/ticket_id_txt" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Date"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ticket_id_txt"
+                app:layout_constraintEnd_toStartOf="@+id/date"
+                app:layout_constraintTop_toTopOf="@+id/ticket_id_txt" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="12dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ticket_id_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ticket_id_txt" />
+
+            <TextView
+                android:id="@+id/subject_txt"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="subject"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/replies_view_txt"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="@+id/ticket_id_txt"
+                app:layout_constraintTop_toBottomOf="@+id/ticket_id_txt" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/subject_txt"
+                app:layout_constraintEnd_toEndOf="@+id/date"
+                app:layout_constraintStart_toStartOf="@+id/ticket_id"
+                app:layout_constraintTop_toTopOf="@+id/subject_txt" />
+
+            <TextView
+                android:id="@+id/replies_view_txt"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:text="Replies"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ticket_id_txt"
+                app:layout_constraintTop_toBottomOf="@+id/subject_txt" />
+
+            <TextView
+                android:id="@+id/replies_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/replies_view_txt"
+                app:layout_constraintEnd_toStartOf="@+id/open_btn"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toEndOf="@+id/replies_view_txt"
+                app:layout_constraintStart_toStartOf="@+id/subject"
+                app:layout_constraintTop_toTopOf="@+id/replies_view_txt" />
+
+            <Button
+                android:id="@+id/open_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg2"
+                android:lines="1"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/replies_view_txt"
+                app:layout_constraintEnd_toEndOf="@+id/date"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/replies_view"
+                app:layout_constraintTop_toTopOf="@+id/replies_view_txt" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

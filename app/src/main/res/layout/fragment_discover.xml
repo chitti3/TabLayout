@@ -1,0 +1,110 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.youthhub.FirstOpenPage.FragmentDiscover">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrain"
+        android:layout_width="250dp"
+        android:layout_height="355dp"
+        app:layout_constraintBottom_toTopOf="@+id/discover_txt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/discover_img"
+            android:layout_width="250dp"
+            android:layout_height="315dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/discover_img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/discover_img"
+            app:layout_constraintLeft_toLeftOf="@+id/discover_img"
+            app:layout_constraintRight_toRightOf="@+id/discover_img" />
+
+        <Button
+            android:id="@+id/join_btn"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/open_screen_btn_shape1"
+            android:text="Join"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@+id/view"
+            app:layout_constraintRight_toRightOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/constrain"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/constrain"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/constrain"
+        android:id="@+id/discover_txt"
+        app:layout_constraintBottom_toTopOf="@+id/discover_desc"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/discover_str"
+        android:textSize="14sp"
+        android:textColor="@color/text_color"
+        app:layout_constraintTop_toBottomOf="@+id/discover_txt"
+        app:layout_constraintRight_toRightOf="@+id/constrain"
+        app:layout_constraintLeft_toLeftOf="@+id/constrain"
+        android:id="@+id/discover_desc"
+        app:layout_constraintBottom_toTopOf="@+id/next_btn"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:background="@drawable/open_screen_btn_shape2"
+        app:layout_constraintTop_toBottomOf="@+id/discover_desc"
+        app:layout_constraintLeft_toLeftOf="@+id/discover_desc"
+        app:layout_constraintRight_toRightOf="@+id/discover_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>

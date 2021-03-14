@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="YourAnimation.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/activity_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/activity_slide_down</item>
+    </style>
+
+</resources>

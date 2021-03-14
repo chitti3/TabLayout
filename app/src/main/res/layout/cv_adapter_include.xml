@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resume Title"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/cv_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04 Feb, 2019"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cv_title"
+        app:layout_constraintTop_toTopOf="@+id/cv_title" />
+
+    <TextView
+        android:id="@+id/resume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cover Letter"
+        android:textSize="12sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/cv_download"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/cv_title"
+        app:layout_constraintTop_toBottomOf="@+id/cv_title" />
+
+    <TextView
+        android:id="@+id/cv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download"
+        android:textSize="12sp"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/resume"
+        app:layout_constraintEnd_toEndOf="@+id/cv_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resume"
+        app:layout_constraintTop_toTopOf="@+id/resume" />
+
+    <ImageView
+        android:id="@+id/cv_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_delete"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cv_date"
+        app:layout_constraintTop_toBottomOf="@+id/resume"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

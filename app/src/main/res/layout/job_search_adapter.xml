@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="5dp"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/jobs_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nulla in massa lacus"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:lines="1"
+            app:layout_constraintEnd_toStartOf="@+id/pin_unpin_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/pin_unpin_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_unpin_bookmark"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/jobs_title"
+            app:layout_constraintBottom_toBottomOf="@+id/jobs_title"/>
+
+        <TextView
+            android:id="@+id/post_by"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dominate Events"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/jobs_title"
+            app:layout_constraintEnd_toStartOf="@+id/jobs_region"
+            app:layout_constraintTop_toBottomOf="@+id/jobs_title" />
+
+        <TextView
+            android:id="@+id/jobs_region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Auckland region"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/post_by"
+            app:layout_constraintEnd_toEndOf="@+id/pin_unpin_img"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/post_by"
+            app:layout_constraintTop_toTopOf="@+id/post_by" />
+
+        <TextView
+            android:id="@+id/jobs_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Full - Time"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/jobs_title"
+            app:layout_constraintEnd_toStartOf="@+id/jobs_date"
+            app:layout_constraintTop_toBottomOf="@+id/post_by" />
+
+        <TextView
+            android:id="@+id/jobs_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="12 Jan, 2019"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/jobs_type"
+            app:layout_constraintEnd_toEndOf="@+id/pin_unpin_img"
+            app:layout_constraintStart_toEndOf="@+id/jobs_type"
+            app:layout_constraintTop_toTopOf="@+id/jobs_type" />
+
+        <TextView
+            android:id="@+id/jobs_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:lines="4"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="@+id/pin_unpin_img"
+            app:layout_constraintStart_toStartOf="@+id/jobs_title"
+            app:layout_constraintTop_toBottomOf="@+id/jobs_type" />
+
+        <View
+            android:id="@+id/jobs_view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/light_dark"
+            app:layout_constraintEnd_toEndOf="@+id/pin_unpin_img"
+            app:layout_constraintStart_toStartOf="@+id/jobs_title"
+            app:layout_constraintTop_toBottomOf="@+id/jobs_desc" />
+
+        <Button
+            android:id="@+id/jobs_view_more_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg2"
+            android:text="View More"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/jobs_title"
+            app:layout_constraintTop_toBottomOf="@+id/jobs_view"
+            app:layout_constraintVertical_bias="0.5" />
+        <TextView
+            android:id="@+id/jobs_view_more_text"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg2"
+            android:text="View More"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/jobs_title"
+            app:layout_constraintTop_toBottomOf="@+id/jobs_view"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <TextView
+            android:id="@+id/txt_is_applied"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+           android:gravity="right|center"
+            android:text="Viewed"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/jobs_view_more_text"
+            app:layout_constraintEnd_toEndOf="@+id/visual_journey_img"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/pin_unpin_img"
+            app:layout_constraintTop_toTopOf="@+id/jobs_view_more_text" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

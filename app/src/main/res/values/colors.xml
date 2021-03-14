@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#08C5FF</color>
+    <color name="colorPrimaryDark">#0aa9da</color>
+    <color name="colorAccent">#08C5FF</color>
+
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_dark">#D5D5D5</color>
+    <color name="light_dark1">#F9F9FB</color>
+    <color name="spinner_color">#F9F9FB</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_transparent">#90000000</color>
+    <color name="light_transparent1">#90000000</color>
+    <color name="text_color">#7b7979</color>
+    <color name="dark_navy">#465774</color>
+    <color name="yellow">#F3B802</color>
+    <color name="dark_yellow">#BE9412</color>
+    <color name="online_green">#51DC8E</color>
+    <color name="grey">#98999B</color>
+
+    <array name="loader_color">
+        <item>@color/grey</item>
+    </array>
+
+    <color name="light_dark2">#E4E4E6</color>
+
+</resources>

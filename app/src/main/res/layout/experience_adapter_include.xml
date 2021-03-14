@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/exp_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="McDonalds"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/exp_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exp_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 2017 - Jan 1970"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/exp_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/exp_title"
+        app:layout_constraintTop_toTopOf="@+id/exp_title" />
+
+    <TextView
+        android:id="@+id/exp_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Team Member"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/exp_years"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/exp_title"
+        app:layout_constraintTop_toBottomOf="@+id/exp_title" />
+
+    <TextView
+        android:id="@+id/exp_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Year 2 Months"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/exp_position"
+        app:layout_constraintEnd_toEndOf="@+id/exp_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/exp_position"
+        app:layout_constraintTop_toTopOf="@+id/exp_position" />
+
+    <TextView
+        android:id="@+id/exp_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum"
+        android:textSize="12sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/exp_date"
+        app:layout_constraintStart_toStartOf="@+id/exp_title"
+        app:layout_constraintTop_toBottomOf="@+id/exp_position" />
+
+    <ImageView
+        android:id="@+id/exp_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_delete"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/exp_date"
+        app:layout_constraintTop_toBottomOf="@+id/exp_desc"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_keyresponability"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Key Responsibilities / Achievements:"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/exp_delete"
+        app:layout_constraintStart_toStartOf="@+id/exp_desc"
+        app:layout_constraintTop_toBottomOf="@+id/exp_desc" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/exprecycle_responability"
+        android:layout_width="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/exp_delete"
+        app:layout_constraintStart_toStartOf="@+id/txt_keyresponability"
+        app:layout_constraintTop_toBottomOf="@+id/txt_keyresponability"/>
+
+</android.support.constraint.ConstraintLayout>

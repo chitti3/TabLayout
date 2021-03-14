@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/wish_list_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="start"
+        android:text="JobWishlist"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/category_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="start"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/wish_list_txt"
+        app:layout_constraintTop_toBottomOf="@+id/wish_list_txt" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/category_spinner"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/spinner_drop_down"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/wish_list_txt"
+        app:layout_constraintStart_toStartOf="@+id/wish_list_txt"
+        app:layout_constraintTop_toBottomOf="@+id/category_txt" />
+
+    <Button
+        android:id="@+id/apply_btn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg2"
+        android:text="Apply"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/wish_list_txt"
+        app:layout_constraintTop_toBottomOf="@+id/category_spinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Cancel"
+        android:textSize="10sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/bg3"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/apply_btn"
+        app:layout_constraintStart_toEndOf="@+id/apply_btn"
+        app:layout_constraintTop_toTopOf="@+id/apply_btn" />
+
+</android.support.constraint.ConstraintLayout>

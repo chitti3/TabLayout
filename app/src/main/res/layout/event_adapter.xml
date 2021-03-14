@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="5dp"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/event_img"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ocean"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/three_dots"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_img" />
+
+        <ImageView
+            android:id="@+id/three_dots"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_three_dots"
+            android:layout_marginEnd="4dp"
+            android:tint="@color/light_dark"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/event_title"
+            app:layout_constraintBottom_toBottomOf="@+id/event_title"/>
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintEnd_toStartOf="@+id/event_region"
+            app:layout_constraintTop_toBottomOf="@+id/event_title" />
+
+        <TextView
+            android:id="@+id/event_region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="12dp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@+id/event_date"
+            app:layout_constraintEnd_toEndOf="@+id/three_dots"
+            app:layout_constraintStart_toEndOf="@+id/event_date"
+            app:layout_constraintTop_toTopOf="@+id/event_date" />
+
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintEnd_toStartOf="@+id/event_city"
+            app:layout_constraintTop_toBottomOf="@+id/event_date" />
+
+        <TextView
+            android:id="@+id/event_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="12dp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@+id/event_time"
+            app:layout_constraintStart_toEndOf="@+id/event_time"
+            app:layout_constraintEnd_toEndOf="@+id/three_dots"
+            app:layout_constraintTop_toTopOf="@+id/event_time" />
+
+        <TextView
+            android:id="@+id/event_hosted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:layout_marginEnd="12dp"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="@+id/three_dots"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintTop_toBottomOf="@+id/event_time" />
+
+        <View
+            android:id="@+id/event_view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/light_dark"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/three_dots"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintTop_toBottomOf="@+id/event_hosted" />
+
+        <Button
+            android:id="@+id/event_more_details_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg2"
+            android:text="More Details"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintTop_toBottomOf="@+id/event_view"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/count_me_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Count Me Out"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp"
+            android:background="@drawable/bg3"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/event_more_details_btn"
+            app:layout_constraintStart_toEndOf="@+id/event_more_details_btn"
+            app:layout_constraintTop_toTopOf="@+id/event_more_details_btn" />
+
+        <ImageView
+            android:id="@+id/event_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_share"
+            android:tint="@color/light_dark"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/event_more_details_btn"
+            app:layout_constraintEnd_toEndOf="@+id/three_dots"
+            app:layout_constraintTop_toTopOf="@+id/event_more_details_btn" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

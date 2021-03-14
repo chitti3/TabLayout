@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- TODO: Update blank fragment layout -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/update_constrain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/update_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/bg_dashboard_edittext"
+                        android:hint="@string/write_your_update"
+                        android:inputType="text"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+
+                        android:focusableInTouchMode="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/light_dark"
+                        app:layout_constraintRight_toLeftOf="@+id/camera_click_img"
+                        app:layout_constraintTop_toTopOf="@+id/update_edittext"
+                        app:layout_constraintBottom_toBottomOf="@+id/update_edittext"/>
+
+                    <ImageView
+                        android:id="@+id/camera_click_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_camera"
+                        android:tint="@color/light_dark"
+                        android:padding="5dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/update_edittext"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/update_edittext" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nested_scroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/update_constrain">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <include
+                        android:id="@+id/dashboard_layout1"
+                        layout="@layout/dashboard_included_layout1"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <include
+                        android:id="@+id/dashboard_layout2"
+                        layout="@layout/dashboard_included_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@+id/dashboard_layout1"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="@color/transparent"
+                        android:layout_below="@+id/dashboard_layout2"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.constraint.ConstraintLayout>

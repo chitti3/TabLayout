@@ -1,0 +1,189 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.youthhub.signUpPage.FragmentCreateAccount2">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+
+        <com.libizo.CustomEditText
+            android:id="@+id/firstName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="FirstName"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:theme="@style/EditText_color"
+            android:drawableTint="@color/text_color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="0dp" />
+
+        <com.libizo.CustomEditText
+            android:id="@+id/lastName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="LastName"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:theme="@style/EditText_color"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/text_color"
+            android:textColorHint="@color/grey"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/firstName"
+            android:layout_marginTop="8dp"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/light_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/lastName"
+            android:layout_marginTop="8dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/region_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/light_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/gender_spinner"
+            android:layout_marginTop="8dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/district_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/light_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/region_spinner"
+            android:layout_marginTop="8dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/ethnicity_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/light_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/district_spinner"
+            android:layout_marginTop="8dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:id="@+id/job_wishlist_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/light_dark"
+            android:hint="Select Your Job WishList"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/grey"
+            android:paddingStart="12dp"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/ethnicity_spinner"
+            android:layout_marginTop="8dp">
+
+        </TextView>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/iwi_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/light_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/job_wishlist_spinner"
+            android:layout_marginTop="8dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <com.libizo.CustomEditText
+            android:id="@+id/pwd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:theme="@style/EditText_color"
+            android:inputType="textPassword"
+            app:libIZO_hideShowPasswordIconTint="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/iwi_spinner"
+            android:layout_marginTop="8dp" />
+
+        <com.libizo.CustomEditText
+            android:id="@+id/confirm_pwd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            android:theme="@style/EditText_color"
+            android:inputType="textPassword"
+            app:libIZO_hideShowPasswordIconTint="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/pwd"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@id/next_btn"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/open_screen_btn_shape2"
+            android:text="Next"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="@+id/firstName"
+            app:layout_constraintRight_toRightOf="@+id/firstName"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_pwd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/profile_img11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/connection_user_code_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textview_circle2"
+            android:gravity="center"
+            android:text="MS"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+
+            android:src="@drawable/profile_img1"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/search_view"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search_icon_bg"
+        android:drawableRight="@drawable/ic_search"
+        android:drawableTint="@color/white"
+        android:gravity="center_vertical"
+        android:hint="Search"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_img11"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img11">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintBottom_toBottomOf="@+id/jobs_main"
+        app:layout_constraintRight_toRightOf="@+id/search_view"
+        app:layout_constraintTop_toTopOf="@+id/jobs_main" />
+
+    <TextView
+        android:id="@+id/profiler_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Luke"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_img11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile_img11"
+        app:layout_constraintTop_toTopOf="@+id/profile_img11" />
+
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:gravity="start"
+        android:text="Dashboard"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintStart_toStartOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <TextView
+        android:id="@+id/connection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:gravity="start"
+        android:text="Find Connections"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintStart_toStartOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard" />
+
+    <TextView
+        android:id="@+id/events"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:gravity="start"
+        android:text="Events"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintStart_toStartOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/connection" />
+
+    <TextView
+        android:id="@+id/explore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_explore"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:gravity="start"
+        android:text="Explore"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintStart_toStartOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/events" />
+
+    <TextView
+        android:id="@+id/jobs_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_jobs"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:gravity="start"
+        android:paddingEnd="5dp"
+        android:text="Jobs"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/down_arrow"
+        app:layout_constraintStart_toStartOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/explore" />
+
+    <TextView
+        android:id="@+id/jobs_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_job_search"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:text="Job search"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/jobs_main" />
+
+    <TextView
+        android:id="@+id/my_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_myjob"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:text="My Jobs"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/jobs_search" />
+
+    <TextView
+        android:id="@+id/myprofile"
+        android:layout_width="201dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/white"
+        android:gravity="start"
+        android:text="My Profile"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/settings"
+        app:layout_constraintEnd_toEndOf="@+id/jobs_main"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobs_main"
+        app:layout_constraintVertical_bias="0.963"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_settings"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:gravity="start"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/support"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintStart_toStartOf="@+id/logout" />
+
+    <TextView
+        android:id="@+id/support"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_support"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:gravity="start"
+        android:text="Support"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintStart_toStartOf="@+id/logout" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/ic_logout"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:gravity="start"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/right_bg"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/navigation_right_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+</android.support.constraint.ConstraintLayout>

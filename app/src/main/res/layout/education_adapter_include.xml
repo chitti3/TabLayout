@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/edu_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NCEA Level 3"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/edu_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edu_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dec 2018 - Present"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/edu_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edu_title"
+        app:layout_constraintTop_toTopOf="@+id/edu_title" />
+
+    <TextView
+        android:id="@+id/edu_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Botany Downs Secondary"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/edu_years"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/edu_title"
+        app:layout_constraintTop_toBottomOf="@+id/edu_title" />
+
+    <TextView
+        android:id="@+id/edu_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 months"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/edu_position"
+        app:layout_constraintEnd_toEndOf="@+id/edu_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edu_position"
+        app:layout_constraintTop_toTopOf="@+id/edu_position" />
+
+    <TextView
+        android:id="@+id/edu_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum"
+        android:textSize="12sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/edu_date"
+        app:layout_constraintStart_toStartOf="@+id/edu_title"
+        app:layout_constraintTop_toBottomOf="@+id/edu_position" />
+
+    <ImageView
+        android:id="@+id/edu_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_delete"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edu_date"
+        app:layout_constraintTop_toBottomOf="@+id/edu_desc"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

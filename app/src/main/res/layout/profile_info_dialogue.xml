@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/genral_information_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:text="Genral Information"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/firstname_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="First Name"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/firstname_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/lastname_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Last Name"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/lastname_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/dob_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Date of Birth"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/dob_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="12sp"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            android:background="@drawable/spinner_drop_down"
+            >
+
+        </android.support.v7.widget.AppCompatEditText>
+
+        <TextView
+            android:id="@+id/gender_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:id="@+id/region_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Region"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/region_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+        <TextView
+            android:id="@+id/district_city_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="District/City"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+        <TextView
+            android:id="@+id/current_organisation_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Current Organisation Status"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/organisation_spinner"
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"></android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:id="@+id/ethnicity_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Ethnicity"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/ethnicity_spinner"
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+        <TextView
+            android:id="@+id/lwi_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="lwi"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/iwi_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"></android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:id="@+id/email_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:editable="false"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:id="@+id/mobile_number_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Mobile Number"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edit_mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/work_profile_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="Work Profile"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/current_work_status_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Current Work Status"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/current_work_status_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+        <TextView
+            android:id="@+id/work_availability_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Work Availability"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/work_availability_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+        <TextView
+            android:id="@+id/work_experience_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Work Experience"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/work_experience_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+        <TextView
+            android:id="@+id/your_availability_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Your Availability to Work Per Week"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/your_availability_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/prefered_region_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="prefered Region to Work"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/prefered_region_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+
+        <TextView
+            android:id="@+id/district_work_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="prefered District to Work"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/district_work_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+
+        <TextView
+            android:id="@+id/future_intended_destination_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Future Intended Destination"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/future_intended_destination_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+
+        <TextView
+            android:id="@+id/license_and_transport_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="License and Transport"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/license_and_transport_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+
+        <TextView
+            android:id="@+id/residency_status_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Residency Status"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/residency_status_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+        <TextView
+            android:id="@+id/visatype_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:visibility="gone"
+            android:text="What visa do you have?"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/visatype_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_drop_down"/>
+        <TextView
+            android:id="@+id/visaexpire_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:visibility="gone"
+            android:gravity="start"
+            android:text="Visa Expire?"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/linear_visa_expire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edt_visa_month"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Month"
+                android:background="@drawable/bg6"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/edt_visa_year"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Year"
+                android:background="@drawable/bg6"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:layout_weight="1"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/communication_connections_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="Communication Connections"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/instagram_link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Instagram Link"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/instagram_link_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:hint="http://www.instagram.com/xxxxx" />
+
+        <TextView
+            android:id="@+id/facebook_link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Facebook Link"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/facebook_link_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            android:background="@drawable/bg6"
+            android:hint="http://www.facebook.com/xxxxx"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/twitter_link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Twitter Link"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/twitter_link_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            android:background="@drawable/bg6"
+            android:hint="http://www.twitter.com/xxxxx"
+            />
+
+
+        <TextView
+            android:id="@+id/google_plus_link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Google Plus Link "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/google_plus_link_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:hint="http://plus.google.com/xxxxx"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/linkedin_link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Linkedin Link "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/linkedin_link_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:hint="http://www.linkedin.com/xxxxx"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/github_link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Github Link "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/github_link_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:hint="http://www.github.com/xxxxx"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/behance_link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="Behance Link "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/behance_link_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:hint="http://www.behance.com/xxxxx"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/additional_info_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Additional Info"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yes_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:gravity="start"
+            android:text="About Me - Displayed over your Cover photo at the top of your profile" />
+
+        <EditText
+            android:id="@+id/about_me_textview"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"
+            android:gravity="start"
+            android:textColor="@color/text_color"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg6"
+            android:text="im youth Yes" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/apply_button"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bg2"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg3"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
